@@ -1,0 +1,66 @@
+Node	10000ms		20000ms		30000ms		40000ms		50000ms		60000ms		70000ms		80000ms		90000ms		100000ms		110000ms		120000ms		130000ms		140000ms		150000ms		160000ms		170000ms		180000ms		190000ms		200000ms		210000ms		220000ms		230000ms		240000ms		
+------------------------------------------------------------------
+nodeSatu1	100		6		
+nodeTujuh48	76		6		
+nodeLima33	69		17		49		
+ope258	78		6		
+nodeSatu4	84		5		
+nodeEmpat28	23		17		45		
+nodeEmpat27	40		16		50		
+nodeLima29	67		17		49		
+nodeSatu5	82		6		
+nodeLima34	75		17		50		
+nodeLapan53	80		6		
+nodeTiga16	70		14		52		
+nodeLima35	10		33		34		
+ope662	76		5		
+ope864	74		6		
+nodeDua8	107		6		
+nodeTiga20	44		16		45		
+nodeEmpat22	29		20		40		
+nodeTiga19	120		19		46		
+nodeTiga18	32		13		50		
+nodeSatu7	50		2		
+nodeLapan56	39		6		
+nodeEnam40	76		6		
+nodeLapan51	63		6		
+ope460	140		5		
+nodeLapan52	70		6		
+nodeEmpat25	49		14		54		
+nodeSatu6	47		4		
+nodeEnam36	104		6		
+nodeTujuh46	64		5		
+nodeLima32	27		29		32		
+nodeTiga17	121		19		46		
+nodeDua13	73		6		
+ope763	63		7		
+ope561	186		6		
+ope157	109		6		
+nodeEnam38	91		3		6		
+nodeEmpat23	117		21		48		
+nodeTujuh49	109		6		
+nodeDua14	48		
+nodeLima31	47		16		49		
+nodeEnam41	89		6		
+nodeTujuh43	68		6		
+nodeTujuh45	98		6		
+nodeEnam39	78		1		6		
+nodeSatu2	99		6		
+nodeTiga15	40		20		45		
+nodeDua10	69		6		
+nodeDua12	77		6		
+nodeEnam37	102		6		
+nodeLima30	42		20		45		
+nodeSatu3	82		7		
+nodeLapan55	34		6		
+nodeLapan54	30		1		
+ope359	138		6		
+nodeDua9	84		6		
+nodeEnam42	54		6		
+nodeTujuh47	98		6		
+nodeEmpat24	20		15		51		
+nodeLapan50	82		6		
+nodeDua11	78		5		
+nodeTiga21	77		19		46		
+nodeEmpat26	61		25		44		
+nodeTujuh44	70		

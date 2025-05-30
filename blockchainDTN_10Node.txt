@@ -1,0 +1,209 @@
+
+Scenario.name = Mining 10 Node
+Scenario.endTime = 10000000
+Scenario.transaksiAwal = 3
+Scenario.difficulty = 3
+Scenario.nrofHostGroups = 21
+Scenario.threshold = 15
+Scenario.nodesInGroups = 10
+
+# "Bluetooth" interface for all nodes
+btInterface.type = SimpleBroadcastInterface
+# Transmit speed of 2 Mbps = 250kBps
+btInterface.transmitSpeed = 250k
+btInterface.transmitRange = 20
+
+highspeedInterface.type = SimpleBroadcastInterface
+highspeedInterface.transmitSpeed = 10M
+highspeedInterface.transmitRange = 1000
+
+Group.router = DecisionEngineRouter
+DecisionEngineRouter.decisionEngine = EpidemicDecisionRouterBlockchain
+Group.movementModel = RandomArea
+Group.bufferSize = 5M
+Group.waitTime = 0, 120
+Group.speed = 0.5, 1.5
+Group.msgTtl = 300
+Group.nrofHosts = 107
+Group.interface1 = btInterface
+
+
+# group1 (Home) specific settings
+Group1.groupID = home
+Group1.movementModel = StationaryMovement
+Group1.nodeLocation = 500,500
+Group1.nrofHosts = 1
+Group1.nrofInterfaces = 1
+Group1.interface2 = btInterface
+Group1.interface2.transmitRange = 20
+
+
+# Miner groups
+Group2.groupID = nodeSatu
+Group2.movementModel = RandomArea
+Group2.moveArea = 1
+Group2.nrofHosts = 10
+Group2.speed = 0.5, 1.
+
+Group3.groupID = nodeDua
+Group3.movementModel = RandomArea
+Group3.moveArea = 2
+Group3.nrofHosts = 10
+Group3.speed = 0.5, 1.
+Group3.nrofInterfaces = 1
+Group3.interface1 = btInterface
+
+Group4.nrofInterfaces = 1
+Group4.groupID = nodeTiga
+Group4.movementModel = RandomArea
+Group4.moveArea = 3
+Group4.nrofHosts = 10 
+Group4.speed = 0.5, 1.
+Group4.interface1 = btInterface
+
+Group5.groupID = nodeEmpat
+Group5.movementModel = RandomArea
+Group5.moveArea = 4
+Group5.nrofHosts = 10
+Group5.speed = 0.5, 1.
+
+Group6.groupID = nodeLima
+Group6.movementModel = RandomArea
+Group6.moveArea = 5
+Group6.nrofHosts = 10
+Group6.speed = 0.5, 1.
+
+Group7.groupID = nodeEnam
+Group7.movementModel = RandomArea
+Group7.moveArea = 6
+Group7.nrofHosts = 10
+Group7.speed = 0.5, 1.
+
+Group8.groupID = nodeTujuh
+Group8.movementModel = RandomArea
+Group8.moveArea = 7
+Group8.nrofHosts = 10
+Group8.speed = 0.5, 1.
+
+Group9.groupID = nodeLapan
+Group9.movementModel = RandomArea
+Group9.moveArea = 8
+Group9.nrofHosts = 10
+Group9.speed = 0.5, 1.
+
+# Operator Proxy groups
+Group10.groupID = ope1
+Group10.movementModel = RandomArea
+Group10.moveArea = 10
+Group10.nrofHosts = 1
+Group10.speed = 0.5, 1
+Group10.nrofInterface = 1
+Group10.interface1 = btInterface
+
+Group11.groupID = ope2
+Group11.movementModel = RandomArea
+Group11.moveArea = 11
+Group11.nrofHosts = 1
+Group11.speed = 0.5, 1
+Group11.nrofInterfaces = 1
+Group11.interface1 = btInterface
+
+Group12.groupID = ope3
+Group12.movementModel = RandomArea
+Group12.moveArea = 12
+Group12.nrofHosts = 1
+Group12.speed = 0.5, 1
+Group12.nrofInterfaces = 1
+Group12.interface1 = btInterface
+
+Group13.groupID = ope4
+Group13.movementModel = RandomArea
+Group13.moveArea = 13
+Group13.nrofHosts = 1
+Group13.speed = 0.5, 1
+Group13.nrofInterfaces = 1
+Group13.interface1 = btInterface
+
+Group14.groupID = ope5
+Group14.movementModel = RandomArea
+Group14.moveArea = 14
+Group14.nrofHosts = 1
+Group14.speed = 0.5, 1
+Group14.nrofInterfaces = 1
+Group14.interface1 = btInterface
+
+Group15.groupID = ope6
+Group15.movementModel = RandomArea
+Group15.moveArea = 15
+Group15.nrofHosts = 1
+Group15.speed = 0.5, 1
+Group15.nrofInterfaces = 1
+Group15.interface1 = btInterface
+
+Group16.groupID = ope7
+Group16.movementModel = RandomArea
+Group16.moveArea = 16
+Group16.nrofHosts = 1
+Group16.speed = 0.5, 1
+Group16.nrofInterfaces = 1
+Group16.interface1 = btInterface
+
+Group17.groupID = ope8
+Group17.movementModel = RandomArea
+Group17.moveArea = 17
+Group17.nrofHosts = 1
+Group17.speed = 0.5, 1
+Group17.nrofInterfaces = 1
+Group17.interface1 = btInterface
+
+# group18 (Collector) specific settings
+Group18.groupID = col1
+Group18.movementModel = RandomArea
+Group18.moveArea = 18
+Group18.nrofHosts = 1
+Group18.speed = 2, 4
+Group18.nrofInterfaces = 1
+Group18.interface1 = btInterface
+
+# group19 (Internet) specific settings
+Group19.groupID = inter1
+Group19.movementModel = StationaryMovement
+Group19.nrofHosts = 1
+Group19.nrofInterfaces = 1
+Group19.interface1 = btInterface
+Group19.nodeLocation = 1150,500
+
+Group20.groupID = miner
+Group20.movementModel = RandomArea
+Group20.moveArea = 19
+Group20.nrofHosts = 15
+Group20.speed = 0.5, 1.
+
+Group21.groupID = admin
+Group21.movementModel = RandomArea
+Group21.moveArea = 19
+Group21.nrofHosts = 1
+Group21.speed = 0.5, 1.
+
+Events.nrof = 2
+Events1.class = TransactionEventGenerator
+Events1.interval = 30,31
+Events1.size = 500k,1M
+Events1.hosts = 1,80
+Events1.prefix = M
+Events1.time = 0,10000
+
+#Report.nrofReports = 1
+#Report.warmup = 0
+#Report.reportDir = reports/
+#Report.report1 = MessageStatsReport
+
+## Movement model settings
+MovementModel.rngSeed = 6
+MovementModel.worldSize = 1500, 2000
+MovementModel.warmup = 1000
+
+GUI.UnderlayImage.fileName = data/overlay1.png
+GUI.UnderlayImage.rotate = 0
+GUI.UnderlayImage.scale = 1
+GUI.UnderlayImage.offset = 0, 0
